@@ -50,6 +50,8 @@ html,body{
     animation: rotate 2s linear infinite;
   }
   
+
+  
   @keyframes rotate {
     0% {  transform: rotate(180deg)}
     100% { transform: rotate(540deg)}
