@@ -19,6 +19,7 @@
     height: 250px;
     background-color: white;
     border-radius: 15px;
+    padding-bottom: 5px;
 }
 
 
@@ -75,13 +76,21 @@
     flex-wrap: wrap;
     position: relative;
     bottom: 15px;
-    margin: 0px 15px
+    margin: 0px 15px;
+}
+
+.txt-restaurant p{
+    font-weight: 400;
 }
 
 
 
 .txt-restaurant h3 {
     padding-bottom: 5px;
+    font-weight: 800;
+}
+
+.txt-restaurant span{
     text-transform: capitalize;
 }
 
@@ -100,7 +109,7 @@
     transition: opacity 200ms;
 }
 
-.fa-solid {
+.heart .fa-solid {
     opacity: 0;
     transition: opacity 800ms;
     position: absolute;
