@@ -1,0 +1,43 @@
+header{
+    height: auto;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 20px;
+}
+
+nav i{
+    font-size: 20px;
+}
+
+nav img{
+    height: auto;
+    width: 60%;
+    margin: auto;
+}
+
+
+.img-header{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+@media all and (min-width:768px){
+    nav{
+        justify-content: flex-start;
+    }
+
+    nav img{
+        width: 350px;
+    }
+
+    .img-header{
+        height: 400px;
+    }
+}

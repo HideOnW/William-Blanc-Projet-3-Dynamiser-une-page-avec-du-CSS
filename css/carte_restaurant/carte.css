@@ -1,0 +1,190 @@
+.s-carte{
+    position: relative;
+    padding: 0px 20px 30px 20px;
+    z-index: 1;
+}
+
+
+.s-carte article{
+    animation:opacity-carte 2s forwards;
+    visibility: hidden;
+}
+
+@keyframes opacity-carte {
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    100%{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes opacity-before {
+    0% {
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+.s-carte article:nth-child(1){
+    animation-delay: 100ms;
+}
+
+.s-carte article:nth-child(2){
+    animation-delay: 200ms;
+}
+
+.s-carte article:nth-child(3){
+    animation-delay: 400ms;
+}
+
+.s-carte article:nth-child(4){
+    animation-delay: 600ms;
+}
+
+.s-carte article:nth-child(5){
+    animation-delay: 800ms;
+}
+
+.s-carte article:nth-child(6){
+    animation-delay: 1000ms;
+}
+
+
+
+
+.ligne-verte{
+    height: 3px;
+    width: 45px;
+    background-color: #99E2D0;
+}
+
+.art-plat{
+    margin: 13px 0px;
+    box-shadow: 0px 0px 15px rgb(170, 170, 170,0.6);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.prix-plat{
+    margin-bottom: 0px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.txt-plat{
+    padding: 14px 20px 14px 10px;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    overflow: hidden;
+
+}
+
+.art-plat:hover .txt-plat{
+    width: 40%;
+}
+
+.txt-plat div{
+    width: 80%;
+}
+
+.txt-plat div p,.txt-plat div h3{
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+.validation-plat{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0px;
+    border-radius: 0px 15px 15px 0px;
+    background-color: #99E2D0;
+    transition-duration: 0.6s;
+}
+
+.art-plat:hover .validation-plat{
+    width: 70px;
+
+}
+
+.art-plat:hover .fa-check{
+    transform: rotate(360deg);
+}
+
+.fa-check{
+    padding: 3px;
+    border-radius: 10px;
+    background-color: white;
+    color: #99E2D0;
+    transition-duration: 0.6s;
+}
+
+
+.commander{
+    cursor: pointer;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    color: white;
+    padding: 15px 20px;
+    background: linear-gradient(175deg, rgba(255,121,218,1) 10%, rgba(147,86,220,1) 90%);
+    border-radius: 50px;
+    font-weight: 400;
+    box-shadow: 0px 3px 8px rgb(170, 170, 170,0.8);
+}
+
+.commander:hover{
+    opacity: 0.9;
+    box-shadow: 0px 5px 6px rgb(110, 110, 110,1);
+}
+
+
+
+@media all and (min-width:768px){
+    
+    .s-carte{
+        width: 43%;
+    }
+
+
+    .art-plat{
+        width: 100%;
+
+    }
+
+    .art-plat:hover .txt-plat{
+        max-width: 100%;
+    
+    }
+
+    .txt-plat{
+        width: 100%;
+    }
+
+    .d-commander{
+        width: 100%;
+    }
+
+    
+}
+
+@media all and (min-width:1300px){
+    .s-carte{
+        width: 30%;
+    }
+}

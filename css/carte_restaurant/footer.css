@@ -1,0 +1,38 @@
+footer{
+    margin-top: 43px;
+    padding: 20px 0px 40px 20px;
+    background-color: rgb(60, 60, 60);
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+footer img{
+    width: 100px;
+    fill: white;
+    display: none;
+}
+
+footer h2{
+    margin-bottom: 10px;
+    text-transform: initial;
+    font-size: 24px;
+    font-family: "Shrikhand";
+    font-weight: 400;
+}
+
+
+footer div{
+    display: flex;
+    align-items: center;
+}
+
+footer i{
+    width: 30px;
+    font-size: 15px;
+}
+footer p{
+    font-weight: 400;
+}
